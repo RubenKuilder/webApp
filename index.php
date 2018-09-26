@@ -10,7 +10,12 @@
         <?php
         $dayofweek = date('w', strtotime($date));
 
-        echo "Het is nu " . date("l");
+        if (date("l") == "Friday") {
+        	echo "WEEKEND";
+        } else {
+        	echo "Nog niet..";
+        }
+        //echo "Het is nu " . date("l");
         ?>
     </body>
 </html>
