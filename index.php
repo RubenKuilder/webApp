@@ -8,9 +8,9 @@
 
     <body>
         <?php
-        if (date("l") == "Saturday" || date("l") == "Sunday") {
+        if (date("l") == "Wednesday" || date("l") == "Sunday") {
             echo "<img src='hetisweekend.png' alt='weekend' />";
-            echo "WEEKEND";
+            echo "JA HET IS WEEKEND!!";
         } else {
             echo "<img src='hetisgeenweekend.png' alt='geenweekend' />";
 
@@ -19,7 +19,7 @@
 
             $days_remaining = floor($remaining / 86400);
             $hours_remaining = floor(($remaining % 86400) / 3600);
-            echo "Nog $days_remaining dagen en $hours_remaining uur te gaan!";
+            echo "Nope! Nog $days_remaining dagen en $hours_remaining uur te gaan!";
         }
         ?>
     </body>
