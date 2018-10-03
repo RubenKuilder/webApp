@@ -10,7 +10,7 @@
         <?php
         $dayofweek = date('w', strtotime($date));
 
-        if (date("l") == "Friday") {
+        if (date("l") == "Friday" || date("l") == "Saturday" || date("l") == "Sunday") {
         	echo "WEEKEND";
         } else {
         	echo "Nog niet..";
