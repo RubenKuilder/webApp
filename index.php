@@ -16,6 +16,11 @@
         	echo "Nog niet..";
         }
         //echo "Het is nu " . date("l");
+
+        $dt_end = strtotime('next tuesday');
+        echo $dt_end;
+        $remain = $dt_end->diff(new DateTime());
+        echo $remain->d . ' days and ' . $remain->h . ' hours';
         ?>
     </body>
 </html>
