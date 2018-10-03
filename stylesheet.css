@@ -4,17 +4,25 @@
 }
 
 div.content {
-	
+	width: 900px;
+	height: 800px;
+	background-color: grey;
+	margin: 0 auto;
 }
 
 div.header {
-	
+	width: 900px;
+	height: 100px;
+	background-color: red;
 }
 
 div.weekend {
-	
+	width: 900px;
+	height: 600px;
 }
 
 div.footer {
-	
+	width: 900px;
+	height: 100px;
+	background-color:red;
 }
