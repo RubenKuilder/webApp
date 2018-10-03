@@ -10,17 +10,16 @@
         <?php
         $dayofweek = date('w', strtotime($date));
 
-        if (date("l") == "Friday" || date("l") == "Saturday" || date("l") == "Sunday") {
+        if (date("l") == "Saturday" || date("l") == "Sunday") {
         	echo "WEEKEND";
         } else {
-        	echo "Nog niet..";
-        }
-        //echo "Het is nu " . date("l");
+            $date = strtotime("next saturday");
+            $remaining = $date - time();
 
-        $dt_end = strtotime('next tuesday');
-        echo $dt_end;
-        $remain = $dt_end->diff(new DateTime());
-        echo $remain->d . ' days and ' . $remain->h . ' hours';
+            $days_remaining = floor($remaining / 86400);
+            $hours_remaining = floor(($remaining % 86400) / 3600);
+            echo "Nog $days_remaining dagen en $hours_remaining uur te gaan!";
+        }
         ?>
     </body>
 </html>
