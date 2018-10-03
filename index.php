@@ -8,8 +8,6 @@
 
     <body>
         <?php
-        $dayofweek = date('w', strtotime($date));
-
         if (date("l") == "Saturday" || date("l") == "Sunday") {
             echo "<img src='hetisweekend.png' alt='weekend' />";
             echo "WEEKEND";
