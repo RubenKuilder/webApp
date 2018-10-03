@@ -11,7 +11,7 @@
         $dayofweek = date('w', strtotime($date));
 
         if (date("l") == "Saturday" || date("l") == "Sunday") {
-        	echo "WEEKEND";
+            echo "WEEKEND";
         } else {
             $date = strtotime("next saturday");
             $remaining = $date - time();
