@@ -11,8 +11,11 @@
         $dayofweek = date('w', strtotime($date));
 
         if (date("l") == "Saturday" || date("l") == "Sunday") {
+            echo "<img src='hetisweekend.png' alt='weekend' />";
             echo "WEEKEND";
         } else {
+            echo "<img src='hetisgeenweekend.png' alt='geenweekend' />";
+
             $date = strtotime("next saturday");
             $remaining = $date - time();
 
