@@ -8,7 +8,7 @@
 
     <body>
         <?php
-        if (date("l") == "Wednesday" || date("l") == "Sunday") {
+        if (date("l") == "Saturday" || date("l") == "Sunday") {
             echo "<img src='hetisweekend.png' alt='weekend' />";
             echo "JA HET IS WEEKEND!!";
         } else {
